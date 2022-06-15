@@ -441,7 +441,6 @@
 
   .grid_3 {
     display: grid;
-    grid-row: 0/1;
     border-style: solid;
     border-color: black;
   }
