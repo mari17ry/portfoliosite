@@ -1,0 +1,315 @@
+/* _______________________________desktop */
+@media (min-width: 1025px) {
+  body {
+    max-width: 1400px;
+    margin: 0 auto;
+    float: none;
+  }
+
+  .container_1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #e7d195;
+    /* border-style: solid;
+    border-color: black; */
+  }
+
+  .grid_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-color: black;
+    border-right: 5px;
+    color: orange;
+    font-size: 40px;
+
+    /* evt. få h2 ned på ny linje */
+  }
+  .grid_1 h1 {
+    font-size: 180px;
+    text-align: center;
+  }
+
+  .grid_1 h2 {
+    text-align: center;
+  }
+
+  .grid_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-color: black;
+  }
+
+  .grid_2 img {
+    width: 100%;
+    height: auto;
+    /* gør evt. width 90% så hele stykket er midnre. ændr billedstørrelse, 
+    så ikke kvadratisk, ellers kommer der gap */
+  }
+
+  .container_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(billeder/ombrebaggrund.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: solid;
+    border-top: none;
+    border-bottom: none;
+
+    border-color: black;
+  }
+
+  .container_2 p {
+    color: black;
+    background-color: white;
+    width: 50%;
+    padding: 40px;
+    margin: 70px 0;
+    column-count: 2;
+    column-gap: 40px;
+    border-style: solid;
+    border-color: black;
+  }
+
+  .container_3 {
+    border-style: solid;
+    border-color: black;
+  }
+
+  .container_3_2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .container_3 h1 {
+    font-size: 60px;
+    margin: 20px 0px 0px 100px;
+  }
+
+  .grid_3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .grid_3 img {
+    width: 60%;
+    height: auto;
+    border-style: solid;
+    border-color: black;
+  }
+
+  .grid_4 {
+    margin: 20px;
+  }
+
+  .grid_4 li {
+    margin: 20px;
+  }
+}
+
+/* __________________________________________tablet______________________ */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .container_1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #e7d195;
+    /* border-style: solid;
+    border-color: black; */
+  }
+
+  .grid_1 {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    border-right: 5px;
+    color: orange;
+    font-size: 40px;
+  }
+  .grid_1 h1 {
+    font-size: 100px;
+    text-align: center;
+    margin: auto;
+  }
+
+  .grid_1 h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .grid_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-color: black;
+  }
+
+  .grid_2 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .container_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(billeder/ombrebaggrund.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: solid;
+    border-top: none;
+    border-bottom: none;
+
+    border-color: black;
+  }
+
+  .container_2 p {
+    color: black;
+    background-color: white;
+    width: 70%;
+    padding: 20px;
+    margin: 50px 0;
+    font-size: 13px;
+
+    border-style: solid;
+    border-color: black;
+  }
+
+  .container_3 {
+    border-style: solid;
+    border-color: black;
+  }
+
+  .container_3_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .container_3 h1 {
+    font-size: 50px;
+    margin-left: 30px;
+  }
+
+  .grid_3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .grid_3 img {
+    width: 100%;
+    height: auto;
+    margin-left: 30px;
+    border-style: solid;
+    border-color: black;
+  }
+
+  .grid_4 li {
+    margin: 20px;
+    font-size: 15px;
+  }
+}
+
+/* ________________________________________mobil_______________ */
+@media (max-width: 480px) {
+  .container_1 {
+    display: grid;
+    background-color: #e7d195;
+  }
+
+  .grid_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-color: black;
+    color: white;
+
+    /* evt. få h2 ned på ny linje */
+  }
+  .grid_1 h1 {
+    font-size: 60px;
+    text-align: center;
+  }
+
+  .grid_1 h2 {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .grid_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-color: black;
+    border-top: none;
+  }
+
+  .grid_2 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .container_2 {
+    display: flex;
+    justify-content: center;
+    background-image: url(billeder/ombrebaggrund.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: solid;
+    border-top: none;
+    border-bottom: none;
+    border-color: black;
+  }
+
+  .container_2 p {
+    color: black;
+    background-color: white;
+    padding: 20px;
+    margin: 30px;
+    font-size: 13px;
+    border-style: solid;
+    border-color: black;
+  }
+
+  .container_3 {
+    border-style: solid;
+    border-color: black;
+  }
+
+  .container_3 h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .grid_3 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .grid_3 img {
+    width: 60%;
+    height: auto;
+    border-style: solid;
+    border-color: black;
+  }
+
+  .grid_4 {
+    margin-top: 30px;
+    font-size: 13px;
+  }
+
+  .grid_4 li {
+    margin: 10px;
+  }
+}

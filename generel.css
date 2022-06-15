@@ -1,0 +1,139 @@
+body {
+  font-family: "Kdam Thmor Pro", sans-serif;
+  margin: 0px;
+}
+
+footer {
+  text-align: center;
+  position: sticky;
+  top: 100vh;
+  color: dimgray;
+  font-size: 13px;
+  border: black;
+  border-style: solid;
+  border-top: none;
+  width: 100%;
+}
+
+/* _____________________________________________desktop */
+@media (min-width: 1025px) {
+  header {
+    background-color: white;
+    height: 100px;
+  }
+
+  header ul {
+    list-style-type: none;
+    display: flex;
+  }
+
+  header li {
+    padding: 10px;
+  }
+
+  header a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    margin: 20px;
+  }
+
+  header a:hover {
+    color: pink;
+  }
+
+  .header_container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+}
+
+/* _______________________________________________tablet */
+@media (min-width: 481px) and (max-width: 1024px) {
+  header {
+    background-color: white;
+    height: 100px;
+  }
+
+  header ul {
+    list-style-type: none;
+    display: flex;
+  }
+
+  header li {
+    padding: 10px;
+  }
+
+  header a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    margin: 10px;
+  }
+
+  header a:hover {
+    color: pink;
+  }
+
+  .header_container {
+    margin: 0 auto;
+    overflow: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  .header_container a {
+    font-size: 18px;
+  }
+}
+
+/* ________________________________________________mobil */
+@media (max-width: 480px) {
+  header {
+    background-color: white;
+    height: 100%;
+  }
+
+  header ul {
+    list-style-type: none;
+  }
+
+  header li {
+    padding: 5px;
+  }
+
+  header a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    margin: 10px;
+  }
+
+  header a:hover {
+    color: pink;
+  }
+
+  .header_container {
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  .header_container a {
+    font-size: 18px;
+  }
+}

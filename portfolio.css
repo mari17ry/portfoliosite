@@ -1,0 +1,513 @@
+/* ____________________________om siden portfolio */
+
+.om_siden_portfolio {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  background-image: url(billeder/ombrebaggrund.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-style: solid;
+  border-color: black;
+  border-bottom: none;
+  height: auto;
+}
+
+#news_bar {
+  border-style: solid;
+  border-color: black;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  background: white;
+  width: auto;
+  overflow: hidden;
+}
+
+.indhold {
+  font-weight: bold;
+  white-space: nowrap;
+  clear: both;
+  float: left;
+}
+
+/* _____________________om_container og button */
+
+.om_container {
+  display: grid;
+  max-width: 600px;
+  margin: 30px auto;
+  float: none;
+}
+
+/* ____________________________________________________________________dekstop 1025 og op_____________________ */
+@media (min-width: 1025px) {
+  body {
+    max-width: 1400px;
+    margin: 0 auto;
+    float: none;
+  }
+  .h1_grid {
+    margin: 0 50px;
+    padding: 0 60px;
+  }
+
+  .h1_grid h1 {
+    /* font-size: 80px;  fylder hele 'siden' ud, hvis det ønskes , (men så slet lineheight*/
+    font-size: 100px;
+    color: white;
+    margin-left: 40px;
+    line-height: 90px;
+  }
+
+  .om_siden_portfolio p {
+    margin: 50px;
+    padding: 50px;
+    column-count: 2;
+    color: white;
+  }
+
+  /* _________indhold_________ */
+  .container_1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* background-color: #e7d195; */
+    background-color: pink;
+  }
+
+  .grid_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-color: black;
+    border-right: 5px;
+    color: white;
+    font-size: 40px;
+  }
+  .grid_1 h1 {
+    font-size: 100px;
+    text-align: center;
+  }
+
+  .grid_1 h2 {
+    text-align: center;
+  }
+
+  .grid_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-color: black;
+  }
+
+  .grid_2 img {
+    width: 100%;
+    height: auto;
+  }
+
+  /*--__________________ container 2 billede til venstre */
+
+  .container_2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #e7d195;
+  }
+
+  .grid_4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-color: black;
+    border-left: 0px;
+    color: white;
+    font-size: 40px;
+  }
+
+  .grid_4 h1 {
+    font-size: 100px;
+    text-align: center;
+  }
+
+  .grid_4 h2 {
+    text-align: center;
+  }
+
+  .grid_3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-color: black;
+  }
+
+  .grid_3 img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* ___________________________expand portfolio side */
+
+  .button {
+    text-decoration: none;
+    color: black;
+  }
+
+  .button {
+    background-color: white;
+    font-family: monospace;
+    cursor: pointer;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .button {
+    transition-duration: 0.2s;
+  }
+
+  .button:hover {
+    color: dimgray;
+  }
+
+  .portfolio_expand {
+    background-color: lavenderblush;
+    height: 100%;
+    width: auto;
+    border-style: solid;
+    border-color: black;
+    margin-bottom: 90px;
+  }
+
+  .expand_indhold {
+    display: inline-block;
+    text-align: center;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    margin: 120px;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .expand_indhold img {
+    width: 30%;
+    height: auto;
+    margin: 20px;
+  }
+
+  .expand_indhold p {
+    column-count: 2;
+    margin: 20px;
+  }
+
+  .generalclass {
+    display: none;
+  }
+}
+
+/*__________________________________________________________________________ tablet 481-1024_______________ */
+@media (min-width: 481px) and (max-width: 1024px) {
+  /* velkomst/om portfoliosiden */
+
+  .h1_grid {
+    margin: 0 40px;
+    padding: 0 30px;
+  }
+
+  .h1_grid h1 {
+    font-size: 70px;
+    color: white;
+
+    line-height: 60px;
+  }
+
+  .om_siden_portfolio p {
+    color: white;
+    margin: 30px;
+  }
+
+  /* _________indhold_________ */
+
+  .container_1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* background-color: #e7d195; */
+    background-color: pink;
+  }
+
+  .grid_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-color: black;
+    border-right: 5px;
+    color: white;
+    font-size: 40px;
+  }
+
+  .grid_1 h2 {
+    text-align: center;
+    font-size: 35px;
+  }
+
+  .grid_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-color: black;
+  }
+
+  .grid_2 img {
+    width: 100%;
+    height: auto;
+  }
+  .container_2 {
+    background-color: #e7d195;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid_4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-color: black;
+    border-left: 0px;
+    color: white;
+    font-size: 40px;
+  }
+
+  .grid_4 h2 {
+    text-align: center;
+    font-size: 35px;
+  }
+
+  .grid_3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-color: black;
+  }
+
+  .grid_3 img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* ___________________________expand portfolio side */
+
+  .button {
+    text-decoration: none;
+    color: black;
+  }
+
+  .button {
+    background-color: white;
+    font-family: monospace;
+    cursor: pointer;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .button {
+    transition-duration: 0.2s;
+  }
+
+  .button:hover {
+    color: dimgray;
+  }
+  .portfolio_expand {
+    background-color: lavenderblush;
+    margin-bottom: 70px;
+    height: 100%;
+    width: auto;
+    border-style: solid;
+    border-color: black;
+  }
+
+  .expand_indhold {
+    display: inline-block;
+    text-align: center;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    margin: 30px;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .expand_indhold img {
+    width: 40%;
+    height: auto;
+    margin: 10px;
+  }
+
+  .expand_indhold p {
+    margin: 20px;
+    font-size: 13px;
+    /* columncount */
+  }
+
+  .generalclass {
+    display: none;
+  }
+}
+
+/* _________________________________________________________________________mobil 320-480__________________*/
+@media (max-width: 480px) {
+  .h1_grid {
+    margin: 10px;
+  }
+
+  .h1_grid h1 {
+    font-size: 50px;
+    color: white;
+
+    line-height: 50px;
+  }
+
+  .om_siden_portfolio p {
+    color: white;
+    margin: 20px;
+    font-size: 12px;
+  }
+
+  /* _________indhold_________ */
+  .container_1 {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    background-color: pink;
+  }
+
+  .grid_1 {
+    display: grid;
+    border-style: solid;
+    border-color: black;
+    border-bottom: none;
+    color: white;
+    text-align: center;
+    align-content: center;
+  }
+
+  .grid_1 h2 {
+    font-size: 40px;
+    margin: 10px;
+  }
+
+  .grid_2 {
+    display: grid;
+    border-style: solid;
+    border-color: black;
+  }
+
+  .grid_2 img {
+    width: 100%;
+    height: auto;
+  }
+
+  /*--__________________ container 2 billede til venstre */
+
+  .container_2 {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: repeat(2, 1fr);
+    background-color: #e7d195;
+  }
+
+  .grid_4 {
+    display: grid;
+    grid-row: 1 / 2;
+    border-style: solid;
+    border-color: black;
+    border-bottom: none;
+    margin: 0px;
+    text-align: center;
+    align-content: center;
+  }
+
+  .grid_4 h2 {
+    font-size: 40px;
+    color: white;
+  }
+
+  .grid_3 {
+    display: grid;
+    grid-row: 0/1;
+    border-style: solid;
+    border-color: black;
+  }
+
+  .grid_3 img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* ___________________________expand portfolio side */
+
+  .button {
+    text-decoration: none;
+    color: black;
+  }
+
+  .button {
+    background-color: white;
+    font-family: monospace;
+    cursor: pointer;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .button {
+    transition-duration: 0.2s;
+  }
+
+  .button:hover {
+    color: dimgray;
+  }
+
+  .portfolio_expand {
+    background-color: lavenderblush;
+    margin-bottom: 70px;
+    height: 100%;
+    width: auto;
+    border-style: solid;
+    border-color: black;
+  }
+
+  .expand_indhold {
+    display: inline-block;
+    text-align: center;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    margin: 20px;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .expand_indhold img {
+    width: 60%;
+    height: auto;
+    margin: 10px;
+  }
+
+  .expand_indhold p {
+    margin: 20px;
+    font-size: 13px;
+  }
+
+  .generalclass {
+    display: none;
+  }
+}
